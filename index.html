@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Voice Recorder with Seer's Reply</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <p id="seerReply"></p>
+        </div>
+        <div class="controllers">
+            <!-- Corrected function names -->
+            <button id="recordButton" onclick="record()">Start Recording</button>
+            <button id="stopButton" onclick="stopRecording()" disabled>Stop Recording</button>
+        </div>
+    </div>
+    <audio style="display:none" id="audioPlayer" controls></audio>
+    <script src="../static/recorder.js"></script>
+</body>
+</html>
