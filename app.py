@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import os
-from decipher2 import process_audio 
+from decipher import process_audio 
 from flask import Flask, render_template
 
 
@@ -9,7 +9,7 @@ app.static_folder = 'static'
 
 @app.route('/')
 def index():
-    return render_template('index2.html')
+    return render_template('index.html')
 
 @app.route('/upload_audio', methods=['POST'])
 def upload_audio():
