@@ -7,31 +7,7 @@ const State = ['Initial', 'Record', 'Download'];
 let stateIndex = 0;
 let mediaRecorder, chunks = [], audioURL = '';
 
-const processAudio = () => {
-    // Send recorded audio for processing
-    // fetch('/process_audio', {
-    //     method: 'POST',
-    //     body: audioURL.json()
-    // })
-    fetch('/process_audio', {
-        headers : {
-            'Content-Type' : 'application/json'
-        },
-        method : 'POST',
-        body : JSON.stringify( {
-            'audio_url' : document.getElementsByName('audio'),
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        // const seerReply = data.seer_reply;
-        // // Display the Seer's reply on the web page
-        // document.getElementById('seerReply').textContent = seerReply;
-    })
-    .catch(error => {
-        console.error('Error processing audio:', error);
-    });
-}
+
 
 // mediaRecorder setup for audio
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -63,11 +39,20 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             .then(data => {
                 let seerReply = data.seer_reply;
                 console.log(seerReply);
+                
               
                 // // Display the Seer's reply on the web page
-                let response_element = document.createElement("p");
+                
+                let response_element = document.querySelector("#generated-reply");
                 response_element.innerHTML = seerReply;
-                document.body.appendChild(response_element);
+                response_element.style.border = "solid";
+                response_element.style.borderColor = "purple";
+                response_element.style.backgroundColor = "rgb(167, 108, 167)";
+                response_element.style.color = "rgb(255,255,255)";
+
+                response_element.scrollIntoView();
+
+                response_element.scrollIntoView({behavior: "smooth"});   
              
             })
             .catch(error => {
@@ -95,12 +80,12 @@ const record = () => {
     stateIndex = 1;
     mediaRecorder.start();
     application(stateIndex);
+    changeImage('../static/answer_search.png');
 }
 
 const stopRecording = () => {
     stateIndex = 2;
     mediaRecorder.stop();
-    // processAudio(); // Call the processAudio function to send audio for processing
     application(stateIndex);
 }
 
@@ -130,9 +115,8 @@ const addAudio = () => {
     audio.controls = true;
     audio.src = audioURL;
     display.append(audio);
+    changeImage('../static/answer_ball.png');
 }
-
-
 const application = (index) => {
     switch (State[index]) {
         case 'Initial':
@@ -161,6 +145,13 @@ const application = (index) => {
             addMessage('Your browser does not support mediaDevices');
             break;
     }
+}
+const seerImage = document.getElementById('seerImage');
+
+// Function to change the images
+function changeImage(imagePath) {
+    let seer_image_element = document.querySelector("#seerImage");
+    seer_image_element.src = imagePath;
 }
 
 application(stateIndex);
