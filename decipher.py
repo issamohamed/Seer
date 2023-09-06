@@ -44,7 +44,7 @@ def process_audio(audio_path):
 
     # Create conversation with initial system message
     messages = [
-        {"role": "system", "content": "You are a kind wizard of vast wisdom named 'Seer', "
+        {"role": "system", "content": "You are a kind mystic of vast wisdom named 'Seer', "
         "who summarizes questions and statements made from audio while answering to the best of its ability."},
         {"role": "user", "content": audio_txt},
     ]
