@@ -9,48 +9,44 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Ensure the body occupies the full viewport height */
-            margin: 0; /* Remove default margin to center content properly */
-            
+            min-height: 100vh;
+            margin: 0;
         }
 
-        /* Header style */
         .header {
             background-color: rgb(75, 6, 75);
-            padding: 10px 0; /* Adjust top and bottom padding to make it thinner */
+            padding: 10px 0;
             text-align: center;
-            width: 100%; /* Make the header span the entire width of the viewport */
-            position: fixed; /* Position the header at the top */
-            top: 0; /* Place the header at the top of the viewport */
-            z-index: 1; /* Ensure the header is above other content */
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
         }
 
-        /* Header text style */
         .header h1 {
             color: white;
         }
 
         .container {
             text-align: center;
-            margin-top: 100px; /* Adjust top margin to create more space below the header */
+            margin-top: 100px;
         }
 
-        /* Style for the buttons */
         .controllers button {
-            margin: 10px; /* Add spacing between the buttons */
-            padding: 20px 40px; /* Increase padding for larger buttons */
-            font-size: 24px; /* Increase font size for the buttons */
-            background-color: rgb(75, 6, 75); /* Set button background color */
-            color: white; /* Set button text color to white */
-            border: none; /* Remove button border */
-            cursor: pointer; /* Add cursor pointer on hover */
+            margin: 10px;
+            padding: 20px 40px;
+            font-size: 24px;
+            background-color: rgb(75, 6, 75);
+            color: white;
+            border: none;
+            cursor: pointer;
         }
 
-        /* Style for the image */
         img {
-            max-width: 100%; /* Ensure the image does not exceed its container's width */
-            max-height: 50vh; /* Limit the image's height to 50% of viewport height */
+            max-width: 100%;
+            max-height: 50vh;
         }
+       
     </style>
 </head>
 <body>
@@ -61,7 +57,7 @@
         <div class="display">
             <p id="seerReply"></p>
         </div>
-        <img src="../static/main_seer.png" alt="Seer Image"> <!-- Place the image inside the container -->
+        <img id="seerImage" src="../static/main_seer.png" alt="Seer Image">
         <div id="generated-reply"></div>
         <div class="controllers">
             <button id="recordButton" onclick="record()">Start Recording</button>
