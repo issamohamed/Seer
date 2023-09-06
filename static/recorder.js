@@ -54,6 +54,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 response_element.scrollIntoView();
 
                 response_element.scrollIntoView({behavior: "smooth"});   
+                hideReceivingMessage();
              
             })
             .catch(error => {
@@ -88,6 +89,7 @@ const stopRecording = () => {
     stateIndex = 2;
     mediaRecorder.stop();
     application(stateIndex);
+    showReceivingMessage()
 }
 
 const downloadAudio = () => {
@@ -108,6 +110,8 @@ const addButton = (id, funString, text) => {
 const addMessage = (text) => {
     const msg = document.createElement('p');
     msg.textContent = text;
+    msg.style.color = "purple";
+    msg.style.fontSize = "24px";
     display.append(msg);
 }
 
@@ -129,7 +133,7 @@ const application = (index) => {
         case 'Record':
             clearDisplay();
             clearControls();
-            addMessage('Recording...');
+            addMessage('Listening...');
             addButton('stop', 'stopRecording()', 'Stop Recording');
             break;
 
@@ -153,6 +157,19 @@ const seerImage = document.getElementById('seerImage');
 function changeImage(imagePath) {
     let seer_image_element = document.querySelector("#seerImage");
     seer_image_element.src = imagePath;
+}
+// Function to show the "receiving a vision..." message
+function showReceivingMessage() {
+    const receivingMessageDiv = document.getElementById('receivingMessage');
+    receivingMessageDiv.textContent = 'Receiving a vision...';
+    receivingMessageDiv.style.color = "purple";
+    receivingMessageDiv.style.fontSize = "24px";
+}
+
+// Function to hide the "receiving a vision..." message
+function hideReceivingMessage() {
+    const receivingMessageDiv = document.getElementById('receivingMessage');
+    receivingMessageDiv.textContent = '';
 }
 
 application(stateIndex);
