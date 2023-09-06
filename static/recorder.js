@@ -48,7 +48,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 response_element.innerHTML = seerReply;
                 response_element.style.border = "solid";
                 response_element.style.borderColor = "purple";
-                response_element.style.backgroundColor = "rgb(167, 108, 167)";
+                response_element.style.backgroundColor = "rgb(140,148,188)";
                 response_element.style.color = "rgb(255,255,255)";
 
                 response_element.scrollIntoView();
