@@ -45,8 +45,7 @@ def process_audio(audio_path):
     # Create conversation with initial system message
     messages = [
         {"role": "system", "content": "You are a kind wizard of vast wisdom named 'Seer', "
-                                      "who summarizes questions and statements made from audio while "
-                                      "concisely replying in 2-3 sentences."},
+        "who summarizes questions and statements made from audio while answering to the best of its ability."},
         {"role": "user", "content": audio_txt},
     ]
 
@@ -55,11 +54,11 @@ def process_audio(audio_path):
         model="gpt-3.5-turbo", messages=messages
     )
 
-    # Get Seer's reply
+    # Get assistant's reply
     reply = chat.choices[0].message.content
 
     # Return the generated reply
-    return f"Your Question: {audio_txt} <br> Seer: {reply}"
+    return f"<div> <p>You: {audio_txt} </p>  <p> Seer: {reply} </p> </div>"
 
 # This block is executed only if this file is run directly
 if __name__ == "__main__":
