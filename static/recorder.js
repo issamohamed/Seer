@@ -1,3 +1,4 @@
+// an adapation of https://github.com/davidgrcias/VoiceRecorderJavaScript
 // collect DOMs
 console.log("im am being run");
 const display = document.querySelector('.display');
