@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import os
-from decipher import process_audio 
+from decipher2 import process_audio 
 from flask import Flask, render_template
 
 
@@ -9,7 +9,7 @@ app.static_folder = 'static'
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index2.html')
 
 @app.route('/upload_audio', methods=['POST'])
 def upload_audio():
@@ -20,12 +20,9 @@ def upload_audio():
     # Retrieve the recorded audio from the request
     # audio_file = request.files['audio_data']
 
-    # # Save the audio to 'uploads/sample_audio.wav'
+    # Save the audio to 'uploads/sample_audio.wav'
     audio_path = 'uploads/sample_audio.webm'
-    # audio_file.save(audio_path)
 
-    # # Implement audio processing and Seer's reply generation logic in 'decipher.py'
-    # # You have already imported the 'process_audio_and_get_reply' function from 'decipher2.py'
 
     # # Call the function to process the audio and get the reply
     seer_reply = process_audio(audio_path)
@@ -39,4 +36,7 @@ def upload_audio():
     return jsonify(response)
 
 if __name__ == '__main__':
+    # Specifying a unique port number to avoid possible port conflicts
+    app.run(host="0.0.0.0", port=8888)
     app.run(debug=True)
+    
