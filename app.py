@@ -36,7 +36,7 @@ def upload_audio():
     return jsonify(response)
 
 if __name__ == '__main__':
-    # Specifying a unique port number to avoid possible port conflicts
+    # Specifying a unique port number to avoid possible port unavailability conflicts
     app.run(host="0.0.0.0", port=8888)
     app.run(debug=True)
     
