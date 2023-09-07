@@ -9,7 +9,7 @@ app.static_folder = 'static'
 
 @app.route('/')
 def index():
-    return render_template('index2.html')
+    return render_template('index.html')
 
 @app.route('/upload_audio', methods=['POST'])
 def upload_audio():
