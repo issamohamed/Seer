@@ -23,7 +23,7 @@ HOW TO RUN:
 pip install flask os whisper openai
 
 
-2) Access to OpenAI's GPT-3.5 Turbo model requires an associated API key which is essential for the seamless interaction between Whispher and GPT-3.5. To recieve this required personal API key, one must set up an OpenAi account and follow the steps highlighted in this link:
+2) Access to OpenAI's GPT-3.5 Turbo model requires an associated API key which is essential for the seamless interaction between Whispher and GPT-3.5. To recieve this required personal API key, one must set up an OpenAI account and follow the steps highlighted here in this link:
   
   
 https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt  
@@ -31,11 +31,11 @@ https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt
 
 
 
-3) Now that you have your key, download the files I've provided you with in my "Seer" git repostiory.
+3) Now that you have your OpenAI key, download the files I've provided you with in my "Seer" git repostiory.
 
 
 5) Next, make a text file in the same directory as "decipher.py" named "hidden_key.txt".
    
-7) Now, Paste your API key on the first line of "hidden_key.txt" WITH NO ADDITIONAL SPACES. 
+7) Paste your API key on the first line of "hidden_key.txt" WITH NO ADDITIONAL SPACES. 
 
 8) Finally, hit save on all your changes if you haven't already, and run "app.py" to render the website.
