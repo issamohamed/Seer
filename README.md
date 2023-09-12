@@ -2,7 +2,7 @@
 
 ![8A477033-3C07-46B6-8F85-E8884D36D18B](https://github.com/issamohamed/Seer/assets/48192737/526cd89d-b8bb-4a03-af41-a07d37d00845)
 
- "Seer" is a AI web application I've been passionately developing, graciously inspired by recent strides in AI use cases, and I'm eager to walk you through its inner workings. At its core is "app.py," a Python script that serves as the project's foundation. It utilizes the Flask web framework to create a user-friendly interface. When you visit the project's main page, you'll be greeted by  a supplmentary HTML template, "index2.html" that provides the interface for the User's entire experience.
+ "Seer" is a AI web application I've been passionately developing, graciously inspired by recent strides in new public AI use cases, and I'm eager to walk you through its inner workings. At its core is "app.py," a Python script that serves as the project's foundation. It utilizes the Flask web framework to create a user-friendly interface. When you visit the project's main page, you'll be greeted by  a supplmentary HTML template, "index2.html" that provides the interface for the User's entire experience.
 
 Here's where things get intriguing: you have the ability to record audio directly through your web browser. Once you've finished recording, the audio file is carefully saved as "sample_audio.webm" in a dedicated directory known as "uploads." But the real magic unfolds when the audio is handed over to "decipher.py."
 
