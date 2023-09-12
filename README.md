@@ -34,6 +34,8 @@ https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt
 3) Now that you have your key, download the files I've provided you with in my "Seer" git repostiory.
 
 
-5) Next, make a text file in the same directory as "decipher.py" named "hidden_key.txt" and paste your API key on the first line of the file WITH NO ADDITIONAL SPACES.
+5) Next, make a text file in the same directory as "decipher.py" named "hidden_key.txt".
+   
+7) Now, Paste your API key on the first line of "hidden_key.txt" WITH NO ADDITIONAL SPACES. 
 
-6) Finally, hit save on all your changes if you haven't already, and run "app.py" to render the website
+8) Finally, hit save on all your changes if you haven't already, and run "app.py" to render the website.
