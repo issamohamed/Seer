@@ -17,7 +17,7 @@ Seer's generated response along with the user's transcription is decoratively di
 
 
 HOW TO RUN:
-1) Seeing this a flask application that makes use of the Whispher's and GPT-3.5's Libaries, locally you'll need to make sure to instiall this command below for all the necessary enviorment resources:
+1) Seeing this a flask application that makes use of the Whispher's and GPT-3.5's Libaries, for all the necessary enviorment resources, run this command below into your terminal:
 
 pip install flask os whisper openai
 
