@@ -22,7 +22,7 @@ HOW TO RUN:
 pip install flask os whisper openai
 
 
-2) Additionally, access to OpenAI's GPT-3.5 Turbo model requires an associated API key which is essential for the seamless interaction between Whispher and GPT-3.5. To recieve this required personal API key, one must set up an OpenAi account and follow the steps highlighted in this link:
+2) Access to OpenAI's GPT-3.5 Turbo model requires an associated API key which is essential for the seamless interaction between Whispher and GPT-3.5. To recieve this required personal API key, one must set up an OpenAi account and follow the steps highlighted in this link:
   
   
 https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt  
