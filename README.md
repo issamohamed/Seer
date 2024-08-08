@@ -20,7 +20,7 @@ Seer's generated response along with the user's transcription is decoratively di
 HOW TO RUN:
 1) Seeing this a flask application that makes use of the Whispher's and GPT-3.5's Libaries, for all the necessary enviorment resources, run this command below into your terminal:
 
-pip install flask os whisper openai
+pip install flask whisper openai
 
 
 2) Access to OpenAI's GPT-3.5 Turbo model requires an associated API key which is essential for the seamless interaction between Whispher and GPT-3.5. To recieve this required personal API key, one must set up an OpenAI account and follow the steps highlighted here in this link:
