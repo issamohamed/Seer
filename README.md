@@ -111,7 +111,3 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
-
----
-
-Built with 🎤 and 🤖 by Issa Mohamed
