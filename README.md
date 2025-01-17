@@ -1,6 +1,7 @@
 Seer 🔮
-A mystical AI-powered voice interaction platform that combines speech recognition and natural language processing to create an engaging conversational experience.
-Show Image
+A mystical AI-powered voice interaction platform that combines speech recognition and natural language processing to create an engaging conversational !
+experience.
+[8A477033-3C07-46B6-8F85-E8884D36D18B_1_105_c](https://github.com/user-attachments/assets/7091b9a6-5cfa-44d7-a04f-9f303a5b310e)
 🌟 Overview
 Seer is an innovative web application that bridges the gap between voice interaction and AI intelligence. By combining OpenAI's Whisper for speech recognition and GPT-3.5 Turbo for response generation, Seer creates a unique, mystic-themed conversational experience that feels both magical and natural.
 ✨ Features
